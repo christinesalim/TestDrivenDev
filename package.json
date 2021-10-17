@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "lint": "eslint . && prettier-eslint --list-different **/*.js",
+    "format": "prettier-eslint --write **/*.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,8 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-plugin-jest": "^22.1.2",
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "prettier-eslint-cli": "^5.0.1"
   },
   "dependencies": {
     "prettier-eslint": "^10.1.0"
